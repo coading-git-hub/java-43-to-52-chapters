@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style.css">
+    <title>js practice</title>
+</head>
+<body>
+    
+<!--////////////////////// Assignment # 43-48/////////////////////////////////// -->
+
+<!-- 1. Show an alert box on click on a link. -->
+
+<!-- <a href="javascript:void(0)" onclick="alert('Assalam u Alakum !')">click me</a> -->
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- 2. Display some Mobile images in browser. On click on an 
+image Show the message in alert to user. -->
+
+<!-- <h1>Mobile phone lookup</h1>
+<img 
+width="150px"
+height="200px" style="box-shadow: 8px 8px 8px 8px rgb(130, 123, 123);margin: 40px;"
+onclick="alert('Thanks for purchasing phone 1 from us')" src="./images/mob 1.jpeg" alt="">
+<img 
+width="150px"
+height="200px" style="box-shadow: 8px 8px 8px 8px rgb(130, 123, 123);margin: 40px;"
+onclick="alert('Thanks for purchasing phone 2 from us')" src="./images/mob2.jpeg" alt="">
+<img 
+width="150px"
+height="200px" style="box-shadow: 8px 8px 8px 8px rgb(130, 123, 123);margin: 40px;" 
+onclick="alert('Thanks for purchasing phone 3 from us')" src="./images/mob3.jpeg" alt="">
+<img 
+width="150px"
+height="200px" style="box-shadow: 8px 8px 8px 8px rgb(130, 123, 123);margin: 40px;"
+onclick="alert('Thanks for purchasing phone 4 from us')" src="./images/mob4.jpeg" alt=""> -->
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- 3. Display 10 student records in table and each row should contain a delete 
+button. If you click on a button to delete a record, entire row should be 
+deleted.  -->
+<!-- <h1>Students Data</h1>
+<table id="studentTable">
+<thead>
+    <tr>
+        <th>Students I.D</th>
+        <th>NAME</th>
+        <th>CLASS</th>
+        <th>ACTION</th>
+    </tr>
+</thead>
+<tbody >
+    <tr><td>01 </td>
+        <td>Samreen </td>
+        <td>One </td>
+        <td><button onclick="deleteRow(this)">Delete</button> </td>
+    </tr>
+    <tr><td>02</td>
+        <td>Kiran </td>
+        <td>Two </td>
+        <td><button onclick="deleteRow(this)">Delete</button> </td>
+    </tr>
+    <tr><td>03 </td>
+        <td>Ambreen</td>
+        <td>Three </td>
+        <td><button onclick="deleteRow(this)">Delete</button> </td>
+    </tr>
+    <tr><td>04 </td>
+        <td>Ahmed </td>
+        <td>Four </td>
+        <td><button onclick="deleteRow(this)">Delete</button> </td>
+    </tr>
+    <tr><td>05 </td>
+        <td>Ana </td>
+        <td>Five </td>
+        <td><button onclick="deleteRow(this)">Delete</button> </td>
+    </tr>
+    <tr><td>06 </td>
+        <td>Noreen</td>
+        <td>Six </td>
+        <td><button onclick="deleteRow(this)">Delete</button> </td>
+    </tr>
+    <tr><td>07 </td>
+        <td>Afsheen</td>
+        <td>Seven </td>
+        <td><button onclick="deleteRow(this)">Delete</button> </td>
+    </tr>
+    <tr><td>08</td>
+        <td>Nasir </td>
+        <td>Eight</td>
+        <td><button onclick="deleteRow(this)">Delete</button> </td>
+    </tr>
+    <tr><td>09 </td>
+        <td>tuba </td>
+        <td>Nine </td>
+        <td><button onclick="deleteRow(this)">Delete</button> </td>
+    </tr>
+    <tr><td>10</td>
+        <td>Zaid </td>
+        <td>Metric</td>
+        <td><button onclick="deleteRow(this)">Delete</button> </td>
+    </tr>
+</tbody>
+</table> -->
+
+<!-- //////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- 4. Display an image in browser. Change the picture on mouseover and set the
+first picture on mouseout. -->
+
+<!-- <img width="500px"
+height="500px"
+ src="./images/car 1.jpeg" onmouseover="src='images/car2.jpeg'" 
+onmouseleave="src='images/car 1.jpeg'"> -->
+
+<!-- /////////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- 5. Show a counter in browser. Counter should increase on click on increase 
+button and decrease on click on decrease button. And show updated counter 
+value in browser -->
+<!-- <h1>Counter</h1>
+<div class="counter-value" id="counter">0</div>
+<button class="increase" onclick="increaseCounter()">  Increase</button>
+<button class="decrease" onclick="decreaseCounter()">  Deccrease</button>
+<button class="reset" onclick="reset()"> Reset</button> -->
+
+<!-- ///////////////////////////  Assignment # 49-52 ///////////////////////////////////// -->
+
+<!-- 1. Create a signup form and display form data in your web 
+page on submission. -->
+
+    <!-- <div class="container">
+        <h1>SIGHNUP FORM</h1>
+     <h3>Please fill in this form to Create an account</h3> <hr>
+     <form id="form_body" action="action_page" style="border: 1px #ccc;">
+<div > <label for="name"> NAME  :</label>
+ <input id="name" type="text" placeholder="your name" name="name" required></div>
+
+ <div><label for="email"> EMAIL  :</label>
+ <input  id="email"type="text" placeholder="email" name="email" required>
+</div>
+ <div ><label for="password">PASSWORD:</label>
+ <input id="password"type="text" placeholder="password" name=" password" required></div>
+
+<div class="checked"> <label for="checkbox"> <input type="checkbox" placeholder="checked" name="remember" style="margin-bottom: 15px; width: 35px; height: 15px;">Remember me
+<p>By creating an accout you agree to our <a href="#" style="color: dodgerblue;">Terms & conditions</a> </p>
+</label></div>
+<div class="button">
+    <button type="reset" class="resettbtn"id="reset" > reset</button>
+    <button type="submit" class="signup"id=submit>signup</button>
+</div>
+</form></div>
+<div id = result style="text-align: center; font-size: 25px; border: 1px solid brown; background-color: burlywood;"></div> -->
+
+<!-- /////////////////////// 2. Suppose in your webpage there is content area in which 
+you have entered your item details, but user can only see 
+some details on first look. When user clicks on “Read 
+more” button, full detail of that particular item will be 
+displayed.  -->
+
+<!-- /creat card -->
+
+<!-- <div class="container">
+  <div class=" card">  <img src="./images/car2.jpeg" alt="">
+    <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, cum! .....
+    </p>
+    <a id="readMore" onclick="expandPara()" href="javascript:void(0)">Read More</a>
+    <a id="lesspara " onclick="Lesspara()" href="javascript:void(0)">Less Para</a>
+</div>
+</div> -->
+
+<!-- //////////////////////////////////q3 /////////////////// -->
+
+<!-- 3. In previous assignment you have created a tabular data 
+using javascript. Let’s modify that. Create a form which 
+takes student’s details and show each student detail in 
+table. Each row of table must contain a delete button and 
+an edit button. On click on delete button entire row should 
+be deleted. On click on edit button, a hidden form will 
+appear with the values of that row. -->
+
+<h1>Students Data</h1>
+
+<table id="studentTable">
+<thead>
+    <tr>
+        <th>Students I.D</th>
+        <th>NAME</th>
+        <th>CLASS</th>
+        <th>ACTION</th>
+    </tr>
+</thead>
+<tbody >
+    <tr><td>01 </td>
+        <td>Samreen </td>
+        <td>One </td>
+        <td><button onclick="deleteRow(this)">Delete</button> 
+            <button onclick="addRow(this)">Add</button>
+        </td>
+    </tr>
+    <tr><td>02</td>
+        <td>Kiran </td>
+        <td>Two </td>
+        <td><button onclick="deleteRow(this)">Delete</button>
+            <button onclick="addRow(this)">Add</button> </td>
+    </tr>
+    <tr><td>03 </td>
+        <td>Ambreen</td>
+        <td>Three </td>
+        <td><button onclick="deleteRow(this)">Delete</button> 
+            <button onclick="addRow(this)">Add</button></td>
+    </tr>
+    <tr><td>04 </td>
+        <td>Ahmed </td>
+        <td>Four </td>
+        <td><button onclick="deleteRow(this)">Delete</button> 
+            <button onclick="addRow(this)">Add</button></td>
+    </tr>
+    <tr><td>05 </td>
+        <td>Ana </td>
+        <td>Five </td>
+        <td><button onclick="deleteRow(this)">Delete</button>
+            <button onclick="addRow(this)">Add</button> </td>
+    </tr>
+    <tr><td>06 </td>
+        <td>Noreen</td>
+        <td>Six </td>
+        <td><button onclick="deleteRow(this)">Delete</button> 
+            <button onclick="addRow(this)">Add</button></td>
+    </tr>
+    <tr><td>07 </td>
+        <td>Afsheen</td>
+        <td>Seven </td>
+        <td><button onclick="deleteRow(this)">Delete</button>
+            <button onclick="addRow(this)">Add</button> </td>
+    </tr>
+    <tr><td>08</td>
+        <td>Nasir </td>
+        <td>Eight</td>
+        <td><button onclick="deleteRow(this)">Delete</button> 
+            <button onclick="addRow(this)">Add</button></td>
+    </tr>
+    <tr><td>09 </td>
+        <td>tuba </td>
+        <td>Nine </td>
+        <td><button onclick="deleteRow(this)">Delete</button>
+            <button onclick="addRow(this)">Add</button> </td>
+    </tr>
+    <tr><td>10</td>
+        <td>Zaid </td>
+        <td>Metric</td>
+        <td><button onclick="deleteRow(this)">Delete</button> 
+            <button onclick="addRow()">Add</button></td>
+    </tr>
+</tbody>
+</table> 
+
+<script src="./app.js"></script>
+</body>
+</html>
